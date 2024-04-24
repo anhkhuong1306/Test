@@ -1,0 +1,321 @@
+/* styles.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+html, body{ 
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    height: 10%;
+    background-color: #0074b8;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    height: 5%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+}
+
+nav li {
+    margin-right: 1rem;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0074b8;
+}
+
+nav .icon {
+    display: none;
+}
+
+main {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    height: 100%;
+    line-height: 400px;
+    width: 80%;
+}
+
+footer {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.topnav a.active {
+    color: #3c7da3;
+
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+    nav li:not(:last-child) {
+        display: none;
+    }
+
+    nav .icon {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .responsive {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topnav .responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav ul {
+        display: block;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    .topnav.responsive li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+}
+
+.div-title {
+    line-height: 70px;
+    height: 5%;
+}
+
+.div-title p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.div-search {
+    height: 10%;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.group {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.search-bar {
+    width: 40%;
+}
+
+.search-bar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    background-color: #fafafa;
+    border: solid 1px #ccc;
+    width: 70%;
+}
+
+.search-bar button {
+    padding: 5px;
+    background: none;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.div-button-create {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.div-button-create button {
+    margin-top: 8px;
+    height: 35px;
+    padding: 5px;
+    font-size: 12px;
+    background: #0074b8;
+    border: solid 1px #ccc;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+
+.div-table {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0px auto;
+    width: 800px;
+    display: inline-table;
+}
+
+table tbody {
+    position: sticky
+}
+
+table thead th {
+    position: sticky; 
+    top: 0; 
+    z-index: 1;
+}
+
+table th,
+table td {
+    line-height: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+table th {
+    background-color: #f3f3f3;
+}
+
+tbody > tr {
+    line-height: 15px;
+}
+
+.div-table {
+    width: 100%;
+    height: 50%;
+    overflow: auto;
+}
+
+.div-information {
+    margin-top: 20px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-transfer {
+    margin-top: 20px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.transfer-group {
+    width: 800px;
+    height: 100%;
+    display: block;
+}
+
+.div-amount {
+    line-height: 50px;
+    padding: 5px;
+}
+
+.div-amount label {
+    display: block;
+    line-height: 20px;
+}
+
+.div-amount .info-transfer {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+.div-amount button {
+    height: 35px;
+    padding: 5px;
+    font-size: 12px;
+    background: #0074b8;
+    border: solid 1px #ccc;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.div-new-customer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.customer-info {
+    width: 60%;
+    height: 70%;
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+.info-group {
+    width: 100%;
+    height: 20%;
+    padding: 5px;
+}
+
+.info-group label {
+    display: block;
+    line-height: 50%;
+}
+
+.info-group .info-detail {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    height: 50%;
+    border: 1px solid #ccc;
+    padding: 5px;
+}

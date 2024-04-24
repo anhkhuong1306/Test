@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+    <script src="transaction.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bank Dashboard</h1>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <ul>
+            <li><a href="./customers.html" >Customers</a></li>
+            <li><a href="./accounts.html">Accounts</a></li>
+            <li><a href="./transactions.html" class="active">Transactions</a></li>
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="div-title">
+                <p>List Transactions</p>
+            </div>
+            <div class="div-search">
+                <div class="group">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="div-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Account Transfer</th>
+                            <th>Account Receiver</th>
+                            <th>Amount</th>
+                            <th>Date Transfer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+              </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>

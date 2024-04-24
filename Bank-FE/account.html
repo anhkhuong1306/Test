@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+    <script src="account.js"></script>
+</head>
+<body onload="getAccountDetail()">
+    <header>
+        <h1>Bank Dashboard</h1>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <ul>
+            <li><a href="./customers.html">Customers</a></li>
+            <li><a href="./accounts.html" class="active">Accounts</a></li>
+            <li><a href="./transactions.html">Transactions</a></li>
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="div-title">
+                <p>Account Detail</p>
+            </div>
+            <div class="div-information" style="margin-top: 20px;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Account ID</th>
+                            <th>Account Number</th>
+                            <th>Balance</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="div-transfer">
+  
+                <div class="transfer-group">
+                    <div class="div-amount">
+                        <div class="alert"></div>
+                    </div>
+                    <div class="div-amount">
+                        <label>Transfer To:</label>
+                        <input type="text" class="info-transfer" name="accountNumber" required>  
+                    </div>
+                    <div class="div-amount">
+                        <label>Amount:</label>
+                        <input type="number" min="0" class="info-transfer" name="amount" required>  
+                    </div>
+                    <div class="div-amount" style="display: flex; justify-content: center; margin-top: 10px;">
+                        <button type="button" onclick="transfer()">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>
